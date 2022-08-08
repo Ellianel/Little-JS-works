@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS works</title>
+   
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/413aa18d26.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+<body>
+
+<div class="todo">
+    <div class="header">
+        <h1>ToDo List</h1>
+        <input type="text" class="todo-input" placeholder="Type your task...">
+        <button class="btn-add">Add</button>
+    </div>
+    <div class="todolist">
+        <h3>Task List:</h3>
+        <p class="error-info"></p>
+        <ul>
+            <li data-id='test1'>Drink Coffee
+                <div class="tools">
+                    <button class="complete"><i class="fas fa-check"></i></button>
+                    <button class="edit">EDIT</button>
+                    <button class="delete"><i class="fas fa-times"></i></button>
+                </div>
+            </li>
+            <li data-id='test2'>Eat breakfast
+                <div class="tools">
+                    <button class="complete"><i class="fas fa-check"></i></button>
+                    <button class="edit">EDIT</button>
+                    <button class="delete"><i class="fas fa-times"></i></button>
+                </div>
+            </li>
+            <li data-id='test3'>Clean the house
+                <div class="tools">
+                    <button class="complete"><i class="fas fa-check"></i></button>
+                    <button class="edit">EDIT</button>
+                    <button class="delete"><i class="fas fa-times"></i></button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="popup">
+    <h3>Edit task:</h3>
+    <div class="popup-body">
+        <p class="popup-info"></p>
+        <input type="text" class="popup-input" placeholder="Type new task...">
+        <button class="popup-btn accept">Accept</button>
+        <button class="popup-btn cancel">Cancel</button>
+    </div>
+</div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
